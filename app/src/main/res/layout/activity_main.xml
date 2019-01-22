@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Hello World!"
+        android:textSize="40sp"
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeMinTextSize="24sp"
+        app:autoSizeStepGranularity="5sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mensaje" />
+
+    <Switch
+        android:id="@+id/day"
+        android:layout_width="116dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:checked="true"
+        android:onClick="day"
+        android:text="Day/Night"
+        android:textOff="Day"
+        android:textOn="Night"
+        android:thumb="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="next"
+        android:text="Random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="131dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="40dp"
+        android:onClick="before"
+        android:text="Before"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day" />
+
+    <Button
+        android:id="@+id/after"
+        android:layout_width="118dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:onClick="after"
+        android:text="After"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toEndOf="@+id/before"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="enter"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
